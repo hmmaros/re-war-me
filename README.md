@@ -44,11 +44,10 @@ don't need a fancy CI/CD stack to automate the boring parts.
 
 ```bash
 # build
-javac -d out/production $(find src -name '*.java')
-jar cfe re-war-me.jar main.Main -C out/production .
+mvn clean package
 
 # run
-java -jar re-war-me.jar
+java -jar target/re-war-me-0.9.jar
 ```
 
 1. **Browse → Tomcat root directory** (e.g. `C:\apache-tomcat-9.0.12`).
@@ -117,7 +116,7 @@ re-war-me/
 │   ├── logger/MyLogger.java    # Logging setup
 │   ├── resources/LogoReWarMe.png
 │   └── META-INF/MANIFEST.MF    # Main-Class: main.Main
-└── pom-less: build via javac/jar or IDE artifact
+└── pom.xml                     # Maven build (mainClass: main.Main)
 ```
 
 ### Layering

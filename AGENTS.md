@@ -7,7 +7,7 @@ Guidelines for AI agents and collaborators working on **ReWarMe**.
 - Pure **Java Swing** desktop app (no frameworks, no external dependencies).
 - Watches a build output directory for new/modified `.war` files and redeploys
   them to a local **Apache Tomcat** by running a stop → delete → copy → start cycle.
-- Built purely with `javac`/`jar` or an IDE artifact — there is **no** Maven or Gradle.
+- Built with **Maven** (Java 8) producing a runnable JAR — no external dependencies.
 
 ## Architecture & conventions
 
@@ -56,10 +56,8 @@ Hard rules contributors must follow:
 ## How to run
 
 ```bash
-mkdir -p out/production
-javac -d out/production $(find src -name '*.java')
-jar cfe re-war-me.jar main.Main -C out/production .
-java -jar re-war-me.jar
+mvn clean package
+java -jar target/re-war-me-0.9.jar
 ```
 
 Deployment/testing requires a local Tomcat; never point the tool at a shared or
@@ -67,7 +65,7 @@ production server.
 
 ## Workflow
 
-- Work on `master` via small commits with clear messages.
+- Work on `main` via small commits with clear messages.
 - When asked to "optimize/update the project", prefer safe, behavior-preserving
   refactors (cf. known weak spots) and confirm before touching the deploy logic.
 - Update `README.md` and `AGENTS.md` whenever structure or conventions change.

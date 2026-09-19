@@ -16,8 +16,7 @@ jobs:
         with:
           distribution: temurin
           java-version: '8'
+          cache: maven
 
-      - name: Compile sources
-        run: |
-          mkdir -p out
-          javac -Xlint:none -d out $(find src -name '*.java')
+      - name: Build with Maven
+        run: mvn -B -ntp clean package
