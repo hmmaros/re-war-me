@@ -5,8 +5,8 @@
       <stop offset="1" stop-color="#141416"/>
     </linearGradient>
     <linearGradient id="titlebar" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#334155"/>
-      <stop offset="1" stop-color="#1e293b"/>
+      <stop offset="0" stop-color="#065f46"/>
+      <stop offset="1" stop-color="#022c22"/>
     </linearGradient>
     <linearGradient id="btn" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#fafafa"/>
@@ -15,7 +15,7 @@
   </defs>
 
   <rect width="960" height="560" fill="url(#desk)"/>
-  <circle cx="480" cy="36" r="90" fill="#f59e0b" fill-opacity="0.06"/>
+  <circle cx="480" cy="36" r="90" fill="#34d399" fill-opacity="0.06"/>
 
   <!-- window shadow -->
   <rect x="128" y="112" width="720" height="320" rx="12" fill="#000" fill-opacity="0.5"/>
@@ -23,7 +23,7 @@
   <rect x="120" y="100" width="720" height="320" rx="12" fill="#29282b" stroke="#4b4b52"/>
   <rect x="120" y="100" width="720" height="38" rx="12" fill="url(#titlebar)"/>
   <rect x="120" y="126" width="720" height="12" fill="url(#titlebar)"/>
-  <circle cx="150" cy="119" r="6" fill="#f59e0b"/>
+  <circle cx="150" cy="119" r="6" fill="#34d399"/>
   <text x="480" y="125" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#cbd5e1">ReWarMe - app.war</text>
 
   <!-- content: light Swing (Metal) backend -->

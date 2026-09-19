@@ -32,5 +32,5 @@ push and pull request.
 
 ## License
 
-There is currently no explicit license file. By contributing, you agree your
-changes may be distributed with the project.
+Released under the [MIT License](LICENSE) © 2018 hmmaros. By contributing, you
+agree your changes are distributed under the same license.

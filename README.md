@@ -2,26 +2,27 @@
 
 [![Build](https://github.com/hmmaros/re-war-me/actions/workflows/build.yml/badge.svg)](https://github.com/hmmaros/re-war-me/actions/workflows/build.yml)
 ![Java 8](https://img.shields.io/badge/Java-8-orange?logo=openjdk&logoColor=white)
-![Status](https://img.shields.io/badge/status-legacy%20%C2%B7%20circa%202018-lightgrey)
+![Status](https://img.shields.io/badge/status-legacy%20%C2%B7%202018-lightgrey)
+![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
-> **LEGACY · CIRCA 2018** — Java 8 · Swing · Maven · Windows
+> **LEGACY · 2018** — Java 8 · Swing · Maven · Windows
 >
-> A small experiment from the author's early days, kept on GitHub for posterity.
-> The code is old-school and proud of it.
+> One of my early tools, kept on GitHub for posterity. It solved a real
+> annoyance at the time — and I'm still a little proud of it.
 
 ---
 
 ## The Story
 
-Deploying a WAR in 2018 meant a four-step ritual: stop the server, delete the
-old artifact, drop in the new one, and restart — *by hand*, every single time a
-front-end developer rebuilt the app.
+Back in 2018, deploying a WAR meant a four-step ritual: stop the server, delete
+the old artifact, drop in the new one, and restart — *by hand*, every single
+time I rebuilt the app.
 
-ReWarMe was built to kill that ritual. Point it at Tomcat, point it at your
+I built ReWarMe to kill that ritual. Point it at Tomcat, point it at your
 `target/` folder, click Start, and it watches the build output. The moment you
-rebuild, it takes care of **stop → delete → copy → start** all by itself.
+rebuild, it handles **stop → delete → copy → start** on its own.
 
-It started as a personal painkiller. It stays online as a reminder that you
+It started as a personal painkiller. I keep it online as a reminder that you
 don't need a fancy CI/CD stack to automate the boring parts.
 
 ---
@@ -185,7 +186,11 @@ Three small experiments from the same era, kept for posterity:
 
 ReWarMe issues real operating-system commands (`taskkill`, `rmdir`, `cp`,
 Tomcat shutdown/startup scripts) against the folders you select. Only point it
-at directories you intend to modify. The author is not responsible for data
-loss or damage caused by deploying or deleting files with this tool.
+at directories you intend to modify. I'm not responsible for data loss or
+damage caused by deploying or deleting files with this tool.
 
-*No explicit license — ask the author (`DC`) before reusing the code.*
+---
+
+## License
+
+Released under the [MIT License](LICENSE) © 2018 hmmaros.
