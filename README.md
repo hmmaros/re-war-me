@@ -1,5 +1,9 @@
 ![ReWarMe](assets/header.svg)
 
+[![Build](https://github.com/hmmaros/re-war-me/actions/workflows/build.yml/badge.svg)](https://github.com/hmmaros/re-war-me/actions/workflows/build.yml)
+![Java 8](https://img.shields.io/badge/Java-8-orange?logo=openjdk&logoColor=white)
+![Status](https://img.shields.io/badge/status-legacy%20%C2%B7%20circa%202018-lightgrey)
+
 > **LEGACY · CIRCA 2018** — Java 8 · Swing · Maven · Windows
 >
 > A small experiment from the author's early days, kept on GitHub for posterity.
